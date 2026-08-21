@@ -462,14 +462,15 @@ def main():
         if choice == "1":
             run_user_mode()
 
-        if choice == "2":
+        elif choice == "2":
             run_json_mode()
 
-        if choice == "0":
+        elif choice == "0":
             print("프로그램을 종료합니다.")
             return
-
-        print("입력 오류: 0, 1, 2 중 하나를 선택하세요.")
+        
+        else:
+            print("입력 오류: 0, 1, 2 중 하나를 선택하세요.")
 
 
 if __name__ == "__main__":
